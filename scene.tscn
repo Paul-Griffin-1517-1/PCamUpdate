@@ -1,6 +1,18 @@
-[gd_scene load_steps=2 format=3 uid="uid://b1yu4u6m3764w"]
+[gd_scene load_steps=3 format=3 uid="uid://b1yu4u6m3764w"]
 
 [ext_resource type="Script" path="res://scene.gd" id="1_v34j2"]
+[ext_resource type="Script" path="res://addons/phantom_camera/scripts/phantom_camera/phantom_camera_3D.gd" id="2_ask7s"]
 
 [node name="Node3D" type="Node3D"]
 script = ExtResource("1_v34j2")
+
+[node name="PhantomCamera3D" type="Node3D" parent="."]
+script = ExtResource("2_ask7s")
+priority_override = false
+priority = 0
+follow_mode = 0
+look_at_mode = 0
+tween_parameters = null
+tween_on_load = true
+inactive_update_mode = 0
+camera_3D_resource = null
